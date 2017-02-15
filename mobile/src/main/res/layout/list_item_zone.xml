@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    app:elevation="4dp"
+    app:cardBackgroundColor="@android:color/white"
+    >
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_sensors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23˚c"
+            android:layout_below="@id/txt_name"
+            style="@style/TextAppearance.AppCompat.Display2"
+            />
+
+        <TextView
+            android:id="@+id/txt_presence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presence: true"
+            android:layout_below="@id/txt_sensors"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            >
+
+            <ToggleButton
+                android:id="@+id/tgl_lights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="Lights Off"
+                android:textOn="Lights On"
+                />
+
+            <ToggleButton
+                android:id="@+id/tgl_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="Unlock"
+                android:textOn="Lock"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
